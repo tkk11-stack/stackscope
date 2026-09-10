@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What Is Website Uptime? — StackScope</title>
+<meta name="description" content="What website uptime actually means, why 99.9% isn't as close to perfect as it sounds, and how uptime monitoring catches downtime before your customers do.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="../..">StackScope</a>
+    <div class="links">
+      <a href="..">Blog</a>
+      <a href="../../about/">About</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h1>What Is Website Uptime (and Why It Actually Matters for Your Business)</h1>
+
+    <div class="disclosure">
+      <strong>Affiliate Disclosure:</strong> This page contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you. We only recommend tools we've researched thoroughly.
+    </div>
+
+    <p>"99.9% uptime" sounds close enough to perfect that most people skip past it on a hosting plan's feature list. It isn't. Understanding what that number actually means — and what happens during the time it doesn't cover — is worth five minutes if your website makes you any money at all.</p>
+
+    <h2>What Uptime Actually Means</h2>
+    <p>Uptime is the percentage of time your website is accessible and functioning, measured over a given period (usually a month or a year). Downtime is everything else — server crashes, host outages, maintenance windows, DNS issues, or your site simply failing to load for visitors.</p>
+    <p>It sounds simple, but the percentage hides more than it reveals.</p>
+
+    <h2>Why "99.9%" Is Not the Same as "Basically 100%"</h2>
+    <p>Here's what different uptime percentages actually translate to in real downtime per year:</p>
+    <div class="card" style="overflow-x:auto;">
+      <table style="width:100%; border-collapse:collapse;">
+        <thead>
+          <tr style="text-align:left; border-bottom:1px solid var(--border);">
+            <th style="padding:8px 12px 8px 0;">Uptime</th>
+            <th style="padding:8px 0 8px 12px;">Downtime per year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0;">99.9%</td><td style="padding:8px 0 8px 12px;">~8.76 hours</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0;">99.95%</td><td style="padding:8px 0 8px 12px;">~4.38 hours</td></tr>
+          <tr style="border-bottom:1px solid var(--border);"><td style="padding:8px 12px 8px 0;">99.99%</td><td style="padding:8px 0 8px 12px;">~52.6 minutes</td></tr>
+          <tr><td style="padding:8px 12px 8px 0;">99.999%</td><td style="padding:8px 0 8px 12px;">~5.26 minutes</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>An extra "9" looks like a rounding error on paper. In practice, it's the difference between roughly nine hours of your site being down over a year versus under an hour. If your site takes orders, generates leads, or is how customers reach you, those hours have a real cost attached.</p>
+
+    <h2>What Actually Causes Downtime</h2>
+    <ul>
+      <li><strong>Host-side outages</strong>: your hosting provider's infrastructure goes down (rare with reputable hosts, but not zero)</li>
+      <li><strong>Traffic spikes beyond your plan's capacity</strong>: a sudden surge (a viral post, a sale) overwhelms shared hosting resources</li>
+      <li><strong>Expired SSL certificates</strong>: browsers block access with security warnings until it's renewed</li>
+      <li><strong>DNS misconfiguration</strong>: your domain stops correctly pointing to your host</li>
+      <li><strong>Plugin or software conflicts</strong>: especially common on WordPress sites after an update</li>
+    </ul>
+    <p>Most of these are preventable or catchable early — if you're actually watching for them.</p>
+
+    <h2>How You'd Actually Know Your Site Went Down</h2>
+    <p>Here's the uncomfortable truth: most small business owners find out their site was down from a customer, days later — not in real time. Unless you're actively checking your site every hour (nobody does this manually), you have no way of knowing it went down at 3am and stayed down for six hours until you happened to check.</p>
+    <p>This is what uptime monitoring tools solve. A monitoring service checks your site at set intervals (often every 5 minutes) and alerts you immediately — by email, SMS, or app notification — the moment it detects a failure, so you can fix it in minutes instead of finding out from an angry customer.</p>
+
+    <h2>Do You Need a Paid Monitoring Tool?</h2>
+    <p>Not necessarily at first. Free tiers exist and cover the basics for a single small site. <!-- TODO: replace href with UptimeRobot affiliate link once registered --><a href="https://uptimerobot.com/" target="_blank" rel="noopener">UptimeRobot</a>, for example, offers monitoring with no approval process required to get started, which makes it a reasonable first step even before you've decided on a long-term hosting or SEO toolkit. As your site starts generating real revenue, the cost of even a modest monitoring subscription becomes trivial compared to the cost of hours of unnoticed downtime.</p>
+
+    <h2>FAQ</h2>
+    <p><strong>Is uptime the same as page load speed?</strong><br>
+    No. Uptime is whether your site is accessible at all. Page speed is how fast it loads when it is accessible. Both matter, but they're separate metrics with separate fixes.</p>
+    <p><strong>What uptime percentage should I look for in a host?</strong><br>
+    99.9% is a reasonable baseline most reputable hosts advertise. Be skeptical of hosts that don't publish an uptime guarantee at all.</p>
+    <p><strong>Does downtime affect SEO?</strong><br>
+    Yes, indirectly — if search engine crawlers repeatedly hit your site during downtime, it can affect how reliably your pages get indexed and, in severe or repeated cases, your rankings.</p>
+
+    <p class="muted">Found this useful? Follow <a href="https://www.pinterest.com/stackscope/" target="_blank" rel="noopener">StackScope on Pinterest</a> for more tool comparisons.</p>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2026 StackScope. Some links on this site are affiliate links — see our <a href="../../about/">disclosure</a>.</p>
+</footer>
+</body>
+</html>
