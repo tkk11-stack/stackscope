@@ -97,3 +97,31 @@ footer {
 }
 
 footer a { color: var(--text-muted); }
+
+.table-wrap {
+  overflow-x: auto;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scroll-hint {
+  display: none;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: -8px 0 8px;
+}
+
+@media (max-width: 700px) {
+  .scroll-hint { display: block; }
+
+  .table-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    background: linear-gradient(to right, transparent, var(--bg-card));
+    pointer-events: none;
+  }
+}
