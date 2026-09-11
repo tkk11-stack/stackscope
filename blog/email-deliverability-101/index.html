@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Deliverability 101 — StackScope</title>
+<meta name="description" content="Why your marketing emails land in spam or don't arrive at all, and what SPF, DKIM, DMARC, and sender reputation actually mean for small business senders.">
+<link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a class="logo" href="../..">StackScope</a>
+    <div class="links">
+      <a href="..">Blog</a>
+      <a href="../../about/">About</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h1>Email Deliverability 101: Why Your Emails Land in Spam</h1>
+
+    <div class="disclosure">
+      <strong>Affiliate Disclosure:</strong> This page contains affiliate links. If you purchase through these links, we may earn a commission at no extra cost to you. We only recommend tools we've researched thoroughly.
+    </div>
+
+    <p>Writing a great email nobody sees is a special kind of frustrating. Deliverability — whether your email actually reaches the inbox instead of spam, or gets silently dropped altogether — is a technical problem hiding underneath what feels like a content problem. Here's what actually causes it and how to fix it.</p>
+
+    <h2>Deliverability Is Not the Same as Open Rate</h2>
+    <p>A low open rate can mean people saw your email and ignored it. A deliverability problem means people never had the chance — your email landed in spam, promotions, or didn't arrive at all. These require completely different fixes, so it's worth ruling deliverability in or out before assuming your subject lines are the problem.</p>
+
+    <h2>The Three Technical Records That Matter: SPF, DKIM, DMARC</h2>
+    <p>Major inbox providers now treat these as close to mandatory, not optional extras:</p>
+    <ul>
+      <li><strong>SPF (Sender Policy Framework)</strong>: a DNS record listing which servers are allowed to send email on your domain's behalf. Without it, receiving servers can't verify you're really who you claim to be.</li>
+      <li><strong>DKIM (DomainKeys Identified Mail)</strong>: a digital signature attached to your emails that proves the message wasn't altered in transit and genuinely came from your domain.</li>
+      <li><strong>DMARC (Domain-based Message Authentication, Reporting &amp; Conformance)</strong>: a policy that tells receiving servers what to do with emails that fail SPF or DKIM checks (reject, quarantine, or allow), and gives you visibility into who's sending email using your domain.</li>
+    </ul>
+    <p>As of late 2025, major providers including Gmail began outright rejecting bulk email that doesn't meet these authentication standards — not filtering it to spam, but bouncing it before it's delivered at all. If you're sending marketing email without these set up, this is very likely your actual problem.</p>
+
+    <h2>Sender Reputation: The Score You Can't See Directly</h2>
+    <p>Every domain and IP address that sends email builds up a reputation score with inbox providers, based on factors like spam complaint rates, bounce rates, and engagement. A poor reputation gets your email filtered into spam even when the content itself is fine.</p>
+    <p><strong>What damages sender reputation:</strong></p>
+    <ul>
+      <li>High spam complaint rates (aim to stay well under 0.3%)</li>
+      <li>Sending to purchased or old, unengaged lists</li>
+      <li>Sudden spikes in sending volume with no prior sending history</li>
+      <li>High bounce rates from invalid or outdated email addresses</li>
+    </ul>
+
+    <h2>Content Still Matters — Just Less Than People Think</h2>
+    <p>Spam filters do scan content, but modern filters weigh sender reputation and authentication far more heavily than they weigh specific "spammy" words. That said, a few habits still help:</p>
+    <ul>
+      <li>Avoid excessive exclamation points, all-caps subject lines, and misleading claims</li>
+      <li>Include a genuine, easy-to-find unsubscribe link (a legal requirement in most jurisdictions, and increasingly a technical one — major providers now require one-click unsubscribe support)</li>
+      <li>Keep a reasonable ratio of text to images; an email that's a single large image with no text reads as suspicious to filters</li>
+    </ul>
+
+    <h2>List Hygiene: The Most Overlooked Factor</h2>
+    <p>Sending to an old, unengaged, or purchased list is one of the fastest ways to damage sender reputation. Regularly removing subscribers who haven't opened or clicked in months, and never buying or renting email lists, protects your ability to reach the people who actually want your email.</p>
+
+    <h2>Does Your Email Platform Handle This For You?</h2>
+    <p>Most established email marketing platforms, including <!-- TODO: replace href with impact.com GetResponse tracking link once program is approved --><a href="https://www.getresponse.com/" target="_blank" rel="noopener">GetResponse</a>, handle SPF and DKIM setup for you when you send from their infrastructure with a verified domain, and provide guidance on setting up DMARC. This is one real advantage of using a dedicated platform over sending bulk email from a regular inbox — the authentication groundwork is largely done for you, rather than something you need to configure manually. If you're still choosing a platform, see our comparison of <a href="../best-email-marketing-tools-for-small-business/">6 Best Email Marketing Tools for Small Business in 2026</a>.</p>
+
+    <h2>FAQ</h2>
+    <p><strong>If I only send a few emails a week, do I still need SPF/DKIM/DMARC?</strong><br>
+    Yes — enforcement from major providers isn't based on your volume alone, and setting these up costs nothing once configured. It's worth doing from day one rather than fixing it after deliverability problems appear.</p>
+    <p><strong>Can one spam complaint really hurt my deliverability?</strong><br>
+    Not one in isolation, but complaint rate is measured as a percentage of total sends, and providers track it closely. A pattern of complaints, even a small percentage, can meaningfully damage your sender reputation over time.</p>
+    <p><strong>Is it better to send fewer emails to protect deliverability?</strong><br>
+    Not necessarily fewer — more relevant. Consistent, expected sending to an engaged list builds reputation; erratic sending (silence for months, then a sudden burst) tends to hurt it more than frequency alone.</p>
+
+    <p class="muted">Found this useful? Follow <a href="https://www.pinterest.com/stackscope/" target="_blank" rel="noopener">StackScope on Pinterest</a> for more tool comparisons.</p>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2026 StackScope. Some links on this site are affiliate links — see our <a href="../../about/">disclosure</a>.</p>
+</footer>
+</body>
+</html>
